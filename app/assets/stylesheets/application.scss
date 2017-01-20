@@ -14,6 +14,79 @@
  *= require_self
  *= require font-awesome
  */
+
  @import "bootstrap-sprockets";
  @import "bootstrap";
  @import "font-awesome";
+
+ .custab{
+   border: 1px solid #ccc;
+   padding: 5px;
+   margin: 5% 0;
+   box-shadow: 3px 3px 2px #ccc;
+   transition: 0.5s;
+ }
+
+ .custab:hover{
+   box-shadow: 3px 3px 0px transparent;
+   transition: 0.5s;
+ }
+
+ .jumbotron {
+   background-image:url('http://joblicity.com/wp-content/uploads/2014/05/job-search-success.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding-bottom: 110px;
+ }
+
+ .title {
+   font-family: "Helvetica Neue", "Microsoft Yahei", 微软雅黑;
+   text-align: right;;
+   margin-top: 120px;
+   margin-bottom: 90px;
+ }
+
+ .slogan {
+   margin-top: 20px;
+   margin-bottom: 50px;
+   text-align: right;;
+   color: 212121;
+   top: 12px;
+ }
+
+ .lead {
+   margin-bottom: 30px;
+   text-align: right;;
+   color: 212121;
+ }
+
+
+ .caption {
+  margin: 30px;
+  text-align: center;
+  top: 20px;
+}
+
+.thumbnail {
+    border: 0 none;
+    box-shadow: none;
+    margin-top: 60px;
+}
+
+.navbar-default {
+    background-color: FFD54F;//背景颜色
+    border-color: FFE082;//边框色
+    margin-bottom: 0;//底部 margin 不撑开距离
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        border-radius: 0;//圆角为0
+    }
+}
+
+.container-fluid .jumbotron{
+  padding-bottom: 200px;//内部的底部边距，这样按钮不会很靠近底部了
+  margin: 0 -15px 20px;//顶部margin为0，因此可以直接接着导航栏；左右margin为负15，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
+  border-radius: 0;//圆角为0
+}
