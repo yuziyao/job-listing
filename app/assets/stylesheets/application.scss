@@ -19,6 +19,10 @@
  @import "bootstrap";
  @import "font-awesome";
 
+ .beijing{
+   background-color: rgb(169,169,169);
+ }
+
  .custab{
    border: 1px solid #ccc;
    padding: 5px;
@@ -74,8 +78,8 @@
 }
 
 .navbar-default {
-    background-color: FFD54F;//背景颜色
-    border-color: FFE082;//边框色
+    background-color: #212121;//背景颜色
+    border-color: #212121;//边框色
     margin-bottom: 0;//底部 margin 不撑开距离
 }
 

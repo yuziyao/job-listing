@@ -1,63 +1,128 @@
+<!-- Add this css File in head tag-->
+       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+       <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" media="all">
 
-<div class="container">
-	<div class="row">
-	<div class="slides">
-    <ul> <!-- slides -->
-        <li><img src="http://s18.postimg.org/9okd5u009/success_18715.jpg">
-            <div>Promo text #1</div>
-        </li>
-        <li><img src="http://executivecareerbrand.com/wp-content/uploads/2015/06/businessman-479573_640.jpg">
-            <div>Promo text #2</div>
-        </li>
-        <li><img src="http://www.thecubiclechick.com/wp-content/uploads/2011/09/success.jpg">
-            <div>Promo text #3</div>
-        </li>
-        <li><img src="http://img11.hostingpics.net/pics/601549194.jpg">
-            <div>Promo text #4</div>
-        </li>
-    </ul>
-</div>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- animation social -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-9155049400353686"
-     data-ad-slot="2205382250"
-     data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 
-	</div>
-</div>
+<!--
+       If you want to change #bootstrap-touch-slider id then you have to change Carousel-indicators and Carousel-Control  #bootstrap-touch-slider slide as well
+       Slide effect: slide, fade
+       Text Align: slide_style_center, slide_style_left, slide_style_right
+       Add Text Animation: https://daneden.github.io/animate.css/
+       -->
 
-  <section id="company">
-    <div class = "container-fluid">
-      <div class="row">
-        <div class="col-sm-4 ">
-          <div class="thumbnail">
-            <img src="https://image.freepik.com/freie-ikonen/wegweiser_318-84162.png" alt="search" class = "img-thhumbnail">
-            <div class="caption">
-              <h3>福州源利明珠A座</h3>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 ">
-          <div class="thumbnail">
-            <img src="http://findicons.com/files/icons/1743/ecqlipse/128/mail.png" alt="bid" class = "img-thhumbnail">
-            <div class="caption">
-              <h3>yuziyao2007@163.com</h3>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 ">
-          <div class="thumbnail">
-            <img src="https://cdn-img.easyicon.net/png/11400/1140033.gif" alt="heart" class = "img-thhumbnail">
-            <div class="caption">
-              <h3>0591-12344321</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+
+       <div id="bootstrap-touch-slider" class="carousel bs-slider slide  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="5000" >
+
+           <!-- Indicators -->
+           <ol class="carousel-indicators">
+               <li data-target="#bootstrap-touch-slider" data-slide-to="0" class="active"></li>
+               <li data-target="#bootstrap-touch-slider" data-slide-to="1"></li>
+               <li data-target="#bootstrap-touch-slider" data-slide-to="2"></li>
+           </ol>
+
+           <!-- Wrapper For Slides -->
+           <div class="carousel-inner" role="listbox">
+
+               <!-- Third Slide -->
+               <div class="item active">
+
+                   <!-- Slide Background -->
+                   <img src="http://joblicity.com/wp-content/uploads/2014/05/job-search-success.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+                   <div class="bs-slider-overlay"></div>
+
+                   <div class="container">
+                       <div class="row">
+                           <!-- Slide Text Layer -->
+                           <div class="slide-text slide_style_right">
+                               <h1 data-animation="animated zoomInRight">SUCCESS</h1>
+                               <p data-animation="animated fadeInLeft">这里是你梦想启航的地方</p>
+                               <a href="http://localhost:3000/users/sign_in" target="_blank" class="btn btn-default" data-animation="animated fadeInLeft">log in</a>
+                               <a href="http://localhost:3000/jobs" target="_blank"  class="btn btn-primary" data-animation="animated fadeInRight">success</a>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <!-- End of Slide -->
+
+               <!-- Second Slide -->
+               <div class="item">
+
+                   <!-- Slide Background -->
+                   <img src="http://executivecareerbrand.com/wp-content/uploads/2015/06/businessman-479573_640.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+                   <div class="bs-slider-overlay"></div>
+                   <!-- Slide Text Layer -->
+                   <div class="slide-text slide_style_center">
+                       <h1 data-animation="animated flipInX">SUCCESS</h1>
+                       <p data-animation="animated lightSpeedIn">这里是你实现梦想的地方</p>
+                       <a href="http://localhost:3000/users/sign_in" target="_blank" class="btn btn-default" data-animation="animated fadeInUp">log in</a>
+                       <a href="http://localhost:3000/jobs" target="_blank"  class="btn btn-primary" data-animation="animated fadeInDown">success</a>
+                   </div>
+               </div>
+               <!-- End of Slide -->
+
+               <!-- Third Slide -->
+               <div class="item">
+
+                   <!-- Slide Background -->
+                   <img src="https://sfgereblog.files.wordpress.com/2014/10/entrepreneurial-happiness.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+                   <div class="bs-slider-overlay"></div>
+                   <!-- Slide Text Layer -->
+                   <div class="slide-text slide_style_left">
+                       <h1 data-animation="animated zoomInLeft">SUCCESS</h1>
+                       <p data-animation="animated fadeInRight">这里能助你快速找到战友</p>
+                       <a href="http://localhost:3000/users/sign_in" target="_blank" class="btn btn-default" data-animation="animated fadeInLeft">log in</a>
+                       <a href="http://localhost:3000/jobs" target="_blank" class="btn btn-primary" data-animation="animated fadeInRight">success</a>
+                   </div>
+               </div>
+               <!-- End of Slide -->
+
+
+           </div><!-- End of Wrapper For Slides -->
+
+           <!-- Left Control -->
+           <a class="left carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="prev">
+               <span class="fa fa-angle-left" aria-hidden="true"></span>
+               <span class="sr-only">Previous</span>
+           </a>
+
+           <!-- Right Control -->
+           <a class="right carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="next">
+               <span class="fa fa-angle-right" aria-hidden="true"></span>
+               <span class="sr-only">Next</span>
+           </a>
+
+       </div> <!-- End  bootstrap-touch-slider Slider -->
+
+
+
+
+       <section id="company">
+   <div class = "container-fluid">
+     <div class="row">
+       <div class="col-sm-4 ">
+         <div class="thumbnail">
+           <img src="https://image.freepik.com/freie-ikonen/wegweiser_318-84162.png" alt="search" class = "img-thhumbnail">
+           <div class="caption">
+             <h3>福州源利明珠A座</h3>
+           </div>
+         </div>
+       </div>
+       <div class="col-sm-4 ">
+         <div class="thumbnail">
+           <img src="http://findicons.com/files/icons/1743/ecqlipse/128/mail.png" alt="bid" class = "img-thhumbnail">
+           <div class="caption">
+             <h3>yuziyao2007@163.com</h3>
+           </div>
+         </div>
+       </div>
+       <div class="col-sm-4 ">
+         <div class="thumbnail">
+           <img src="https://cdn-img.easyicon.net/png/11400/1140033.gif" alt="heart" class = "img-thhumbnail">
+           <div class="caption">
+             <h3>0591-12344321</h3>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </section>
